@@ -13,4 +13,5 @@ public void doBooking(Booking b) throws SomthingWentWrongException;
 public List<Object[]> BookingList()throws SomthingWentWrongException,RecordNotFoundException;
 public void updateBookingStatus(int bookinid,Status s)throws SomthingWentWrongException,RecordNotFoundException;
 public List<Object[]> findUser(User user) throws SomthingWentWrongException,RecordNotFoundException;
+public void cancelBooking(int bookingId)throws SomthingWentWrongException,RecordNotFoundException;
 }

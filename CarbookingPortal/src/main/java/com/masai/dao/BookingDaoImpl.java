@@ -143,6 +143,32 @@ public class BookingDaoImpl implements BookingDao{
 		}
 		return list;
 	}
+
+	@Override
+	public void cancelBooking(int bookingId) throws SomthingWentWrongException, RecordNotFoundException {
+		// TODO Auto-generated method stub
+		EntityManager em=null;
+		try {
+			em=EMutils.createConnection();
+			Booking b=em.find(Booking.class, bookingId);
+			if(b==null) {
+				throw new RecordNotFoundException("Record Not found with given ID");
+			}
+			EntityTransaction et=em.getTransaction();
+			et.begin();
+			b.setStatus(Status.CANCELED);
+			et.commit();
+			System.out.println("Status Updated successfully");
+		} catch (PersistenceException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+			throw new SomthingWentWrongException("Somthing Went Wrong Please try again later");
+		}
+		finally {
+			em.close();
+		}
+		
+	}
 	
 
 }
