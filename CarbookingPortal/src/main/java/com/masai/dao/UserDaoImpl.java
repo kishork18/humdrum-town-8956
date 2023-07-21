@@ -70,11 +70,14 @@ public class UserDaoImpl implements UserDao{
 		
 	}
 	@Override
-	public void deleteAccount() throws SomthingWentWrongException {
+	public void deleteAccount(int id) throws SomthingWentWrongException {
 		EntityManager em = null;
 		try {
 			em = EMutils.createConnection();
-			User user = em.find(User.class,LoginUser.loginUserID);
+			Query q=em.createQuery("SELECT u FROM User u WHERE u.userId=:id");
+			q.setParameter("id", id);
+			List<User>list=(List<User>)q.getResultList();
+			User user =list.get(0);
 			EntityTransaction et = em.getTransaction();
 			et.begin();
 			user.setIsDeleted(ActiveStatus.DEACTIVIED);

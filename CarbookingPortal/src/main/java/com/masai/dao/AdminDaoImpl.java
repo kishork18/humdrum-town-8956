@@ -1,9 +1,11 @@
 package com.masai.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.masai.entity.Admin;
 import com.masai.entity.LoginAdmin;
+import com.masai.exceptions.RecordNotFoundException;
 import com.masai.exceptions.SomthingWentWrongException;
 import com.masai.utility.EMutils;
 
@@ -66,6 +68,29 @@ public class AdminDaoImpl implements AdminDao{
 		    }
 		    
 		
+	}
+
+	@Override
+	public List<Admin> getAdminList() throws SomthingWentWrongException, RecordNotFoundException {
+		// TODO Auto-generated method stub
+		EntityManager em=null;
+		List<Admin> list= new ArrayList<>();
+		try {
+			em=EMutils.createConnection();
+			Query q=em.createQuery("FROM Admin a");
+			list=(List<Admin>)q.getResultList();
+			if(list.size()==0) {
+				throw new RecordNotFoundException("No record found in System");
+			}
+		} catch (PersistenceException e) {
+			// TODO: handle exception
+			throw new SomthingWentWrongException("Somthing went wrong try again later");
+		}
+		finally {
+			em.close();
+		}
+		
+		return list;
 	}
 	
 }

@@ -17,7 +17,7 @@ public class Report {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private int report_id;
-@ManyToOne(fetch = FetchType.LAZY)
+@ManyToOne(fetch = FetchType.EAGER)
 @JoinColumn(name = "admin_id")
 private Admin admin;
 private LocalDate report_date;
@@ -32,7 +32,7 @@ public Report(Admin admin, LocalDate report_date, int number_of_bookings, double
 	this.admin = admin;
 	this.report_date = report_date;
 	this.number_of_bookings = number_of_bookings;
-	this.revenue_generated = revenue_generated;
+	this.revenue_generated =  revenue_generated;
 }
 public int getReport_id() {
 	return report_id;
