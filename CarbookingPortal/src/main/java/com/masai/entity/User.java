@@ -73,7 +73,7 @@ public ActiveStatus getIsDeleted() {
 @Override
 public String toString() {
 	return "User [userId=" + userId + ", userName=" + userName + ", password=" + password + ", email=" + email
-			+ ", phone_number=" + phone_number + ", isDeleted=" + isDeleted + "]";
+			+ ", phone_number=" + phone_number + ", isActive=" + isDeleted + "]";
 }
 
 }

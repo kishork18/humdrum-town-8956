@@ -26,7 +26,7 @@ public class UserServicesImpl implements UserServices{
 	}
 
 	@Override
-	public void deleteAccount(int id) throws SomthingWentWrongException {
+	public void deleteAccount(int id) throws SomthingWentWrongException,RecordNotFoundException {
 		// TODO Auto-generated method stub
 		UserDao ud= new UserDaoImpl();
 		ud.deleteAccount(id);

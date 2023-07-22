@@ -97,7 +97,7 @@ static void displayMenu() {
 				   System.out.println("Invalid Selection Please Select valid number");
 		 }
 	 }while(choice!=0);
-	 sc.close();
+	
 	
 }
  static void viewCarlist() {
