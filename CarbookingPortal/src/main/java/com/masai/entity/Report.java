@@ -61,5 +61,10 @@ public double getRevenue_generated() {
 public void setRevenue_generated(double revenue_generated) {
 	this.revenue_generated = revenue_generated;
 }
+@Override
+public String toString() {
+	return "Report [report_id=" + report_id + ", AdminID=" + admin.getAdmin_id() + ", AdminUserName=" + admin.getUserName() +", report_date=" + report_date
+			+ ", number_of_bookings=" + number_of_bookings + ", revenue_generated=" + revenue_generated + "]";
+}
 
 }

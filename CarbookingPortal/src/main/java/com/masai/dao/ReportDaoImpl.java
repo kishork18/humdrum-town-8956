@@ -144,10 +144,11 @@ public class ReportDaoImpl implements ReportDao{
 		q.setParameter("id", id);
 		q.setParameter("admin", a);
 		List<Report> list=q.getResultList();
-		Report r=list.get(0);
-		if(r==null) {
+		if(list.size()==0) {
 			throw new RecordNotFoundException("Record Not found with Provided Id or this report is not genrated by you");
 		}
+		Report r=list.get(0);
+		
 		EntityTransaction et=em.getTransaction();
 		et.begin();
 		em.remove(r);

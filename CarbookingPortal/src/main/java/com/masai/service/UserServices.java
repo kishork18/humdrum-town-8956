@@ -10,6 +10,6 @@ public interface UserServices {
 	
 		public void createAccount(User user) throws SomthingWentWrongException;
 		public void logIn(String username,String password) throws SomthingWentWrongException;
-		public void deleteAccount(int id) throws SomthingWentWrongException;
+		public void deleteAccount(int id) throws SomthingWentWrongException,RecordNotFoundException;
 		public  List<User> getUserlist() throws SomthingWentWrongException,RecordNotFoundException;
 }

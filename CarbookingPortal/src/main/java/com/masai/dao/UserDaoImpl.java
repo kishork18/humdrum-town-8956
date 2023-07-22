@@ -54,7 +54,7 @@ public class UserDaoImpl implements UserDao{
 		        q.setParameter("deleted", ActiveStatus.ACTIVE);
 		        List<Integer> userlist = q.getResultList();
 		        if (userlist.isEmpty()) {
-		            throw new SomthingWentWrongException("Something went wrong: Username or password incorrect");
+		            throw new SomthingWentWrongException("Something went wrong: Username or password incorrect or Account is Deactivated please contact us");
 		        }
 		        LoginUser.loginUserID = userlist.get(0);
 		        System.out.println("Welcome " + username);
@@ -70,7 +70,7 @@ public class UserDaoImpl implements UserDao{
 		
 	}
 	@Override
-	public void deleteAccount(int id) throws SomthingWentWrongException {
+	public void deleteAccount(int id) throws SomthingWentWrongException,RecordNotFoundException {
 		EntityManager em = null;
 		try {
 			em = EMutils.createConnection();
@@ -78,11 +78,14 @@ public class UserDaoImpl implements UserDao{
 			q.setParameter("id", id);
 			List<User>list=(List<User>)q.getResultList();
 			User user =list.get(0);
+			if(user==null) {
+				throw new RecordNotFoundException("User Not found with given user ID");
+			}
 			EntityTransaction et = em.getTransaction();
 			et.begin();
 			user.setIsDeleted(ActiveStatus.DEACTIVIED);
 			et.commit();
-			System.out.println("Account deleted");
+			System.out.println("Account Deactivated successfully");
 		}catch(PersistenceException ex) {
 			throw new SomthingWentWrongException("Unable to process request, try again later");
 		}finally{

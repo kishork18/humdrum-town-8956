@@ -126,17 +126,6 @@ public class CarDaoImpl implements CarDao{
 	    }
 		
 	}
-	public static void main(String[] args) {
-		CarDao cd=new CarDaoImpl();
-		Car c=new Car("ABC", "Honda", 1200000, Availability.UNAVAILABLE);
-	   c.setCar_id(3);
-		
-		try {
-			cd.deleteCar(3);
-		} catch (SomthingWentWrongException | RecordNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+	
 
 }
