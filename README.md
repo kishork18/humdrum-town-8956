@@ -26,4 +26,5 @@ The Car Booking Portal is an online platform designed to simplify the process of
 
 ## Database Schema
 The database schema for the Car Booking Portal will consist of the following entities
+
 ![DatabaseERDiagram](https://github.com/kishork18/humdrum-town-8956/assets/119414124/20edc244-c1ca-4433-b02a-dc32d2eb026a)
