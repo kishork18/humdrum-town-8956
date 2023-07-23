@@ -57,14 +57,15 @@ Maven for project build and dependency management.
 Git for version control and collaborative development.
 
 ## Installation
-To install and set up the Car Booking Portal project, follow these steps:
-Clone the project repository from GitHub.
-Install Java and MySQL on your system if not already installed.
-Set up the database and tables using the provided SQL script.
-Configure the database connection details in the Hibernate configuration file.
-Build the project using Maven.
-Run the application to launch the console-based user interface.
-How to Use
+1) To install and set up the Car Booking Portal project, follow these steps:
+2) Clone the project repository from GitHub.
+3) Install Java and MySQL on your system if not already installed.
+4) Set up the database and tables using the provided SQL script.
+5) Configure the database connection details in the Hibernate configuration file.
+6) Build the project using Maven.
+7) Run the application to launch the console-based user interface.
+   
+## How to Use
 After successfully installing the Car Booking Portal, follow the instructions displayed on the console-based user interface to perform various operations. Users can register, log in, search for cars, book cars, and view their booking status. Admin users can log in, manage car details, confirm or reject bookings, and generate reports.
 
 ## Contributing
