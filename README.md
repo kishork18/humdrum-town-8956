@@ -12,6 +12,7 @@ The Car Booking Portal is an online platform designed to simplify the process of
 5) Book a car by selecting the desired car and providing booking details.
 6) View the status of their car bookings, including confirmation or rejection status.
 7) Log out from the car booking portal.
+
 ## Role of Admin
 1) Register for an admin account by providing necessary information.
 2) Log in to the admin account using registered credentials.
