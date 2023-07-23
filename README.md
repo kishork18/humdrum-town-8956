@@ -48,7 +48,8 @@ Provides functionalities for admin users, such as managing bookings and generati
 
 ![Screenshot (136)](https://github.com/kishork18/humdrum-town-8956/assets/119414124/457117ab-78e9-4fcd-9284-e12227ce8805)
 
-## technologies
+
+## Technologies
 Java for application logic and functionality implementation.
 MySQL for the database management system to store user and car information.
 Hibernate as the ORM (Object-Relational Mapping) framework for seamless integration with the database.
