@@ -5,10 +5,10 @@ The Car Booking Portal is an online platform designed to simplify the process of
 2) Admin: Admin users have additional functionalities to manage car details, confirm or reject bookings, and generate reports.
 # Roles and Functionalities
 ## Role of User
-Register for a user account by providing the necessary information.
-Log in to the car booking portal using registered credentials.
-View available cars with details such as car model, brand, price, and availability.
-Apply filters and sorting options to refine the search for car details.
-Book a car by selecting the desired car and providing booking details.
-View the status of their car bookings, including confirmation or rejection status.
-Log out from the car booking portal.
+.Register for a user account by providing the necessary information.
+.Log in to the car booking portal using registered credentials.
+.View available cars with details such as car model, brand, price, and availability.
+.Apply filters and sorting options to refine the search for car details.
+.Book a car by selecting the desired car and providing booking details.
+.View the status of their car bookings, including confirmation or rejection status.
+.Log out from the car booking portal.
