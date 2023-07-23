@@ -28,3 +28,43 @@ The Car Booking Portal is an online platform designed to simplify the process of
 The database schema for the Car Booking Portal will consist of the following entities
 
 ![DatabaseERDiagram](https://github.com/kishork18/humdrum-town-8956/assets/119414124/20edc244-c1ca-4433-b02a-dc32d2eb026a)
+
+
+## Project Components
+The Car Booking Portal project will be organized into the following components:
+
+### Console-Based User Interface
+Provides a command-line interface for users and admins to interact with the portal.
+
+![Screenshot (134)](https://github.com/kishork18/humdrum-town-8956/assets/119414124/fffc048b-e0f8-4d6d-a1ab-8ebd5059120a)
+
+### User Management
+Manages user-related functionalities, such as registration, login, and bookings.
+
+![Screenshot (135)](https://github.com/kishork18/humdrum-town-8956/assets/119414124/624fe729-9ebb-48aa-a1ec-2c1f22faa7af)
+
+### Admin Management
+Provides functionalities for admin users, such as managing bookings and generating reports.
+
+![Screenshot (136)](https://github.com/kishork18/humdrum-town-8956/assets/119414124/457117ab-78e9-4fcd-9284-e12227ce8805)
+
+## technologies
+Java for application logic and functionality implementation.
+MySQL for the database management system to store user and car information.
+Hibernate as the ORM (Object-Relational Mapping) framework for seamless integration with the database.
+Maven for project build and dependency management.
+Git for version control and collaborative development.
+
+## Installation
+To install and set up the Car Booking Portal project, follow these steps:
+Clone the project repository from GitHub.
+Install Java and MySQL on your system if not already installed.
+Set up the database and tables using the provided SQL script.
+Configure the database connection details in the Hibernate configuration file.
+Build the project using Maven.
+Run the application to launch the console-based user interface.
+How to Use
+After successfully installing the Car Booking Portal, follow the instructions displayed on the console-based user interface to perform various operations. Users can register, log in, search for cars, book cars, and view their booking status. Admin users can log in, manage car details, confirm or reject bookings, and generate reports.
+
+## Contributing
+Contributions to the Car Booking Portal project are welcome! If you find any bugs, have suggestions for improvements, or want to add new features, feel free to open an issue or submit a pull request on GitHub.
