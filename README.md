@@ -21,7 +21,9 @@ The Car Booking Portal is an online platform designed to simplify the process of
 5) Delete car details from the portal.
 6) Confirm or reject car bookings made by users.
 7) Generate reports on car bookings, including the number of bookings and revenue generated.
+
 8) Log out from the admin account.
 
 ## Database Schema
 The database schema for the Car Booking Portal will consist of the following entities
+![DatabaseERDiagram](https://github.com/kishork18/humdrum-town-8956/assets/119414124/20edc244-c1ca-4433-b02a-dc32d2eb026a)
