@@ -22,3 +22,6 @@ The Car Booking Portal is an online platform designed to simplify the process of
 6) Confirm or reject car bookings made by users.
 7) Generate reports on car bookings, including the number of bookings and revenue generated.
 8) Log out from the admin account.
+
+## Database Schema
+The database schema for the Car Booking Portal will consist of the following entities
